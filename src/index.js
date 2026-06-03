@@ -11,7 +11,7 @@ import taskRoutes from "./routes/taskRoutes.js";
 const app = express();
 
 // Connect to database
-// await connectDB();
+ await connectDB();
 app.get("/", (req,res)=>{
   res.status(200).json({message:'Server is running'})
 })
