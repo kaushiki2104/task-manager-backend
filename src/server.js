@@ -11,7 +11,7 @@ import taskRoutes from "./routes/taskRoutes.js";
 const app = express();
 
 // Connect to database
-await connectDB();
+//await connectDB();
 
 // Security middleware
 app.use(helmet());
