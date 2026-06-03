@@ -32,6 +32,9 @@ app.use(express.json({ limit: "10kb" }));
 app.use(express.urlencoded({ limit: "10kb", extended: true }));
 
 // Routes
+app.get("/", (req,res)=>{
+  res.status(200).json({message:'Server is running'})
+})
 app.use("/api/auth", authRoutes);
 app.use("/api/tasks", taskRoutes);
 
